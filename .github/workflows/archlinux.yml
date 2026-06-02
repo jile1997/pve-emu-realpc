@@ -77,9 +77,9 @@ jobs:
         uses: actions/create-release@v1
         with:
           tag_name: ${{ format('v{0}-ArchLinux', steps.current-time.outputs.formattedTime) }}
-          release_name: ${{ format('v10.x build-{0} for ArchLinux24', steps.current-time.outputs.formattedTime) }}
+          release_name: ${{ format('v11.x build-{0} for ArchLinux24', steps.current-time.outputs.formattedTime) }}
           body: |
-            build ArchLinux qemu form v10.1 to v10.x.
+            build ArchLinux qemu form v10.1 to v11.x.
             support UEFI and Seabios,Virtual Machine Manager BIOS is UEFI better!
             `sudo pacman -S virt-manager seabios edk2-ovmf qemu-base libvirt virt-viewer bridge-utils dnsmasq`
             `sudo systemctl enable libvirtd.service`
